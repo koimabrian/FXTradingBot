@@ -1,0 +1,6 @@
+mt5:
+  mode: 'live'
+  live:
+    login: 12345678  # Replace with actual live account login
+    password: 'LivePass@2025'  # Replace with actual live account password
+    server: 'Exness-MT5Live'  # Replace with actual live server

@@ -1,0 +1,19 @@
+workflow:
+  strategies_to_test:
+    [
+      "purple_cloud",
+      "jfkps",
+      "bbb_osc",
+      "doda_stochastic",
+      "pmo",
+      "rsi",
+      "macd",
+      "bollinger_bands",
+      "fibonacci_retracement",
+      "atr",
+      "stochastic_oscillator",
+      "ichimoku_cloud",
+      "volume_profile",
+      "pivot_points",
+      "sma",
+    ]

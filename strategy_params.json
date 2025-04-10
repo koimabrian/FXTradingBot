@@ -1,0 +1,168 @@
+{
+  "strategies": {
+    "purple_cloud": {
+      "M1": {"period": 10, "volatility_factor": 1.5},
+      "M5": {"period": 15, "volatility_factor": 1.5},
+      "M15": {"period": 20, "volatility_factor": 2.0},
+      "H1": {"period": 50, "volatility_factor": 2.5},
+      "H4": {"period": 50, "volatility_factor": 2.5},
+      "D1": {"period": 100, "volatility_factor": 3.0}
+    },
+    "jfkps": {
+      "M1": {"lookback": 10},
+      "M5": {"lookback": 15},
+      "M15": {"lookback": 20},
+      "H1": {"lookback": 50},
+      "H4": {"lookback": 50},
+      "D1": {"lookback": 100}
+    },
+    "bbb_osc": {
+      "M1": {"period": 5},
+      "M5": {"period": 8},
+      "M15": {"period": 14},
+      "H1": {"period": 21},
+      "H4": {"period": 21},
+      "D1": {"period": 21}
+    },
+    "doda_stochastic": {
+      "M1": {"k_period": 9, "d_period": 3, "smooth": 3},
+      "M5": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "M15": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "H1": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "H4": {"k_period": 21, "d_period": 5, "smooth": 5},
+      "D1": {"k_period": 21, "d_period": 5, "smooth": 5}
+    },
+    "pmo": {
+      "M1": {"period": 10, "smooth": 5},
+      "M5": {"period": 15, "smooth": 5},
+      "M15": {"period": 20, "smooth": 10},
+      "H1": {"period": 35, "smooth": 15},
+      "H4": {"period": 35, "smooth": 15},
+      "D1": {"period": 50, "smooth": 20}
+    },
+    "rsi": {
+      "M1": {"period": 7},
+      "M5": {"period": 9},
+      "M15": {"period": 14},
+      "H1": {"period": 14},
+      "H4": {"period": 21},
+      "D1": {"period": 21}
+    },
+    "macd": {
+      "M1": {"fast": 6, "slow": 13, "signal": 4},
+      "M5": {"fast": 8, "slow": 21, "signal": 5},
+      "M15": {"fast": 12, "slow": 26, "signal": 9},
+      "H1": {"fast": 12, "slow": 26, "signal": 9},
+      "H4": {"fast": 21, "slow": 50, "signal": 13},
+      "D1": {"fast": 21, "slow": 50, "signal": 13}
+    },
+    "bollinger_bands": {
+      "M1": {"period": 10, "std": 1.5},
+      "M5": {"period": 15, "std": 1.5},
+      "M15": {"period": 20, "std": 2.0},
+      "H1": {"period": 20, "std": 2.0},
+      "H4": {"period": 50, "std": 2.5},
+      "D1": {"period": 50, "std": 2.5}
+    },
+    "fibonacci_retracement": {
+      "M1": {"lookback": 20, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]},
+      "M5": {"lookback": 30, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]},
+      "M15": {"lookback": 50, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]},
+      "H1": {"lookback": 100, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]},
+      "H4": {"lookback": 200, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]},
+      "D1": {"lookback": 300, "levels": [0.236, 0.382, 0.5, 0.618, 0.786]}
+    },
+    "atr": {
+      "M1": {"period": 7},
+      "M5": {"period": 10},
+      "M15": {"period": 14},
+      "H1": {"period": 14},
+      "H4": {"period": 21},
+      "D1": {"period": 21}
+    },
+    "stochastic_oscillator": {
+      "M1": {"k_period": 9, "d_period": 3, "smooth": 3},
+      "M5": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "M15": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "H1": {"k_period": 14, "d_period": 3, "smooth": 3},
+      "H4": {"k_period": 21, "d_period": 5, "smooth": 5},
+      "D1": {"k_period": 21, "d_period": 5, "smooth": 5}
+    },
+    "ichimoku_cloud": {
+      "M1": {"tenkan": 5, "kijun": 13, "senkou": 26},
+      "M5": {"tenkan": 9, "kijun": 26, "senkou": 52},
+      "M15": {"tenkan": 9, "kijun": 26, "senkou": 52},
+      "H1": {"tenkan": 9, "kijun": 26, "senkou": 52},
+      "H4": {"tenkan": 20, "kijun": 60, "senkou": 120},
+      "D1": {"tenkan": 20, "kijun": 60, "senkou": 120}
+    },
+    "volume_profile": {
+      "M1": {"period": 20},
+      "M5": {"period": 30},
+      "M15": {"period": 50},
+      "H1": {"period": 50},
+      "H4": {"period": 100},
+      "D1": {"period": 200}
+    },
+    "pivot_points": {
+      "M1": {"period": 12},
+      "M5": {"period": 24},
+      "M15": {"period": 24},
+      "H1": {"period": 24},
+      "H4": {"period": 24},
+      "D1": {"period": 24}
+    },
+    "sma": {
+      "M1": {"period": 10},
+      "M5": {"period": 15},
+      "M15": {"period": 20},
+      "H1": {"period": 50},
+      "H4": {"period": 100},
+      "D1": {"period": 200}
+    }
+  },
+  "sl_strategies": {
+    "fixed": {
+      "M1": {"distance": 0.0003},
+      "M5": {"distance": 0.0005},
+      "M15": {"distance": 0.001},
+      "H1": {"distance": 0.005},
+      "H4": {"distance": 0.01},
+      "D1": {"distance": 0.02}
+    },
+    "atr": {
+      "M1": {"multiplier": 1.0},
+      "M5": {"multiplier": 1.2},
+      "M15": {"multiplier": 1.5},
+      "H1": {"multiplier": 2.0},
+      "H4": {"multiplier": 2.5},
+      "D1": {"multiplier": 3.0}
+    },
+    "dynamic": {
+      "M1": {"training_samples": 500},
+      "M5": {"training_samples": 750},
+      "M15": {"training_samples": 1000},
+      "H1": {"training_samples": 2000},
+      "H4": {"training_samples": 2000},
+      "D1": {"training_samples": 3000}
+    }
+  },
+  "tp_strategies": {
+    "fixed": {
+      "M1": {"multiplier": 1.5},
+      "M5": {"multiplier": 1.8},
+      "M15": {"multiplier": 2.0},
+      "H1": {"multiplier": 2.5},
+      "H4": {"multiplier": 3.0},
+      "D1": {"multiplier": 3.5}
+    },
+    "dynamic": {
+      "M1": {"training_samples": 500},
+      "M5": {"training_samples": 750},
+      "M15": {"training_samples": 1000},
+      "H1": {"training_samples": 2000},
+      "H4": {"training_samples": 2000},
+      "D1": {"training_samples": 3000}
+    }
+  }
+}

@@ -1,0 +1,53 @@
+python setup_data.py --mode demo --debug --bars 5000
+python setup_data.py --mode demo --debug --fetch-new --bars 10000
+python setup_data.py --mode demo --debug --fetch-new --bars 5000
+
+python main.py --mode demo --parallel --debug
+
+
+C:\Users\chept\OneDrive\Desktop\brian\FXTradingBot\
+    config/
+        backtest_config.yaml
+        data_config.yaml
+        demo_config.yaml
+        live_config.yaml
+        workflow.yaml
+    src/
+        strategies/
+            purple_cloud.py
+            jfkps.py
+            bbb_osc.py
+            doda_stochastic.py
+            pmo.py
+            rsi.py
+            macd.py
+            bollinger_bands.py
+            fibonacci_retracement.py
+            atr.py
+            stochastic_oscillator.py
+            ichimoku_cloud.py
+            volume_profile.py
+            pivot_points.py
+            sma.py
+        stop_take/
+            dynamic_sltp.py
+            fixed_sltp.py
+            atr_sltp.py
+        utils/
+            data_manager.py
+    data/
+        # CSV files will be created here by setup_data.py
+    main.py
+    setup_data.py
+    backtest_runner.py
+
+    backtest_log.txt
+    data_setup_log.txt
+    terminal_log.txt - any exceptions errors
+
+    these files should always be cleared/refresh on each run no logging on terminal the ternminal only shows progress
+
+
+"EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "NZDUSD", "USDCAD", "USDCHF",
+           "EURJPY", "GBPJPY", "AUDJPY", "NZDJPY", "CADJPY", "CHFJPY",
+           "EURGBP", "EURAUD", "USDZAR", "XAUUSD"

@@ -1,0 +1,6 @@
+mt5:
+  mode: 'demo'
+  demo:
+    login: 208711745
+    password: 'Brian@2025'
+    server: 'Exness-MT5Trial9'

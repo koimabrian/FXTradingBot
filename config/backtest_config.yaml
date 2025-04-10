@@ -1,0 +1,35 @@
+backtest:
+  timeframe: "M1"
+  cash: 100000 # Increased cash
+  commission: 0.0002
+  margin: 0.1 # Adjusted leverage to 10:1
+timeframes: ["M1", "M5", "M15", "H1", "H4", "D1"]
+strategies:
+  [
+    "purple_cloud",
+    "jfkps",
+    "bbb_osc",
+    "doda_stochastic",
+    "pmo",
+    "rsi",
+    "macd",
+    "bollinger_bands",
+    "fibonacci_retracement",
+    "atr",
+    "stochastic_oscillator",
+    "ichimoku_cloud",
+    "volume_profile",
+    "pivot_points",
+    "sma",
+  ]
+sl_strategies: ["fixed", "atr", "dynamic"]
+tp_strategies: ["fixed", "dynamic"]
+default_strategy: "macd"
+signals: ["sma", "macd", "rsi", "stochastic_oscillator"]
+default_signal: "sma"
+backtest_modules: ["mt5_backtest", "csv_backtest"]
+default_backtest_module: "mt5_backtest"
+default_sl_strategy: "fixed"
+default_tp_strategy: "fixed"
+dashboard:
+  port: 8050

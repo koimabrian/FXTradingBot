@@ -1,0 +1,472 @@
+2025-03-29 00:49:12,966 - INFO - Logging setup completed
+2025-03-29 00:49:12,966 - INFO - Logging setup completed
+2025-03-29 00:49:13,114 - INFO - MT5 initialized in demo mode with login 208711745
+2025-03-29 00:49:13,114 - INFO - MT5 initialized in demo mode with login 208711745
+2025-03-29 00:49:13,114 - INFO - Added EURUSDm to Market Watch
+2025-03-29 00:49:13,114 - INFO - Added EURUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added GBPUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added GBPUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added AUDUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added AUDUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added NZDUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added NZDUSDm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDCADm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDCADm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDCHFm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added USDCHFm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added EURJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added EURJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added GBPJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added GBPJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added AUDJPYm to Market Watch
+2025-03-29 00:49:13,115 - INFO - Added AUDJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added NZDJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added NZDJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added CADJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added CADJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added CHFJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added CHFJPYm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added EURGBPm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added EURGBPm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added EURAUDm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added EURAUDm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added USDZARm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added USDZARm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added XAUUSDm to Market Watch
+2025-03-29 00:49:13,116 - INFO - Added XAUUSDm to Market Watch
+2025-03-29 00:49:13,155 - INFO - Fetched 3000 rows for EURUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:13,155 - INFO - Fetched 3000 rows for EURUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:13,196 - INFO - Created new CSV with 3000 rows for EURUSDm on M1
+2025-03-29 00:49:13,196 - INFO - Created new CSV with 3000 rows for EURUSDm on M1
+2025-03-29 00:49:13,214 - INFO - Fetched 3000 rows for EURUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:13,214 - INFO - Fetched 3000 rows for EURUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:13,232 - INFO - Created new CSV with 3000 rows for EURUSDm on M5
+2025-03-29 00:49:13,232 - INFO - Created new CSV with 3000 rows for EURUSDm on M5
+2025-03-29 00:49:13,262 - INFO - Fetched 3000 rows for EURUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:13,262 - INFO - Fetched 3000 rows for EURUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:13,278 - INFO - Created new CSV with 3000 rows for EURUSDm on M15
+2025-03-29 00:49:13,278 - INFO - Created new CSV with 3000 rows for EURUSDm on M15
+2025-03-29 00:49:13,307 - INFO - Fetched 3000 rows for EURUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:13,307 - INFO - Fetched 3000 rows for EURUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:13,325 - INFO - Created new CSV with 3000 rows for EURUSDm on H1
+2025-03-29 00:49:13,325 - INFO - Created new CSV with 3000 rows for EURUSDm on H1
+2025-03-29 00:49:13,352 - INFO - Fetched 3000 rows for EURUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:13,352 - INFO - Fetched 3000 rows for EURUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:13,370 - INFO - Created new CSV with 3000 rows for EURUSDm on H4
+2025-03-29 00:49:13,370 - INFO - Created new CSV with 3000 rows for EURUSDm on H4
+2025-03-29 00:49:13,399 - INFO - Fetched 2102 rows for EURUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:13,399 - INFO - Fetched 2102 rows for EURUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:13,414 - INFO - Created new CSV with 2102 rows for EURUSDm on D1
+2025-03-29 00:49:13,414 - INFO - Created new CSV with 2102 rows for EURUSDm on D1
+2025-03-29 00:49:13,418 - INFO - Fetched 3000 rows for GBPUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:13,418 - INFO - Fetched 3000 rows for GBPUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:13,438 - INFO - Created new CSV with 3000 rows for GBPUSDm on M1
+2025-03-29 00:49:13,438 - INFO - Created new CSV with 3000 rows for GBPUSDm on M1
+2025-03-29 00:49:13,462 - INFO - Fetched 3000 rows for GBPUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:13,462 - INFO - Fetched 3000 rows for GBPUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:13,486 - INFO - Created new CSV with 3000 rows for GBPUSDm on M5
+2025-03-29 00:49:13,486 - INFO - Created new CSV with 3000 rows for GBPUSDm on M5
+2025-03-29 00:49:13,509 - INFO - Fetched 3000 rows for GBPUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:13,509 - INFO - Fetched 3000 rows for GBPUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:13,535 - INFO - Created new CSV with 3000 rows for GBPUSDm on M15
+2025-03-29 00:49:13,535 - INFO - Created new CSV with 3000 rows for GBPUSDm on M15
+2025-03-29 00:49:13,557 - INFO - Fetched 3000 rows for GBPUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:13,557 - INFO - Fetched 3000 rows for GBPUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:13,578 - INFO - Created new CSV with 3000 rows for GBPUSDm on H1
+2025-03-29 00:49:13,578 - INFO - Created new CSV with 3000 rows for GBPUSDm on H1
+2025-03-29 00:49:13,603 - INFO - Fetched 3000 rows for GBPUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:13,603 - INFO - Fetched 3000 rows for GBPUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:13,624 - INFO - Created new CSV with 3000 rows for GBPUSDm on H4
+2025-03-29 00:49:13,624 - INFO - Created new CSV with 3000 rows for GBPUSDm on H4
+2025-03-29 00:49:13,649 - INFO - Fetched 2102 rows for GBPUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:13,649 - INFO - Fetched 2102 rows for GBPUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:13,662 - INFO - Created new CSV with 2102 rows for GBPUSDm on D1
+2025-03-29 00:49:13,662 - INFO - Created new CSV with 2102 rows for GBPUSDm on D1
+2025-03-29 00:49:13,663 - INFO - Removed existing CSV file: data\USDJPYm_M1_data.csv
+2025-03-29 00:49:13,663 - INFO - Removed existing CSV file: data\USDJPYm_M1_data.csv
+2025-03-29 00:49:13,735 - WARNING - No data fetched for USDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:49:13,735 - WARNING - No data fetched for USDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:49:14,010 - INFO - Fetched 31366 rows for USDJPYm on M1 using copy_rates_range
+2025-03-29 00:49:14,010 - INFO - Fetched 31366 rows for USDJPYm on M1 using copy_rates_range
+2025-03-29 00:49:14,195 - INFO - Created new CSV with 31366 rows for USDJPYm on M1
+2025-03-29 00:49:14,195 - INFO - Created new CSV with 31366 rows for USDJPYm on M1
+2025-03-29 00:49:14,196 - INFO - Removed existing CSV file: data\USDJPYm_M5_data.csv
+2025-03-29 00:49:14,196 - INFO - Removed existing CSV file: data\USDJPYm_M5_data.csv
+2025-03-29 00:49:14,225 - INFO - Fetched 3000 rows for USDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:49:14,225 - INFO - Fetched 3000 rows for USDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:49:14,243 - INFO - Created new CSV with 3000 rows for USDJPYm on M5
+2025-03-29 00:49:14,243 - INFO - Created new CSV with 3000 rows for USDJPYm on M5
+2025-03-29 00:49:14,245 - INFO - Removed existing CSV file: data\USDJPYm_M15_data.csv
+2025-03-29 00:49:14,245 - INFO - Removed existing CSV file: data\USDJPYm_M15_data.csv
+2025-03-29 00:49:14,270 - INFO - Fetched 3000 rows for USDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:49:14,270 - INFO - Fetched 3000 rows for USDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:49:14,291 - INFO - Created new CSV with 3000 rows for USDJPYm on M15
+2025-03-29 00:49:14,291 - INFO - Created new CSV with 3000 rows for USDJPYm on M15
+2025-03-29 00:49:14,293 - INFO - Removed existing CSV file: data\USDJPYm_H1_data.csv
+2025-03-29 00:49:14,293 - INFO - Removed existing CSV file: data\USDJPYm_H1_data.csv
+2025-03-29 00:49:14,316 - INFO - Fetched 3000 rows for USDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:49:14,316 - INFO - Fetched 3000 rows for USDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:49:14,335 - INFO - Created new CSV with 3000 rows for USDJPYm on H1
+2025-03-29 00:49:14,335 - INFO - Created new CSV with 3000 rows for USDJPYm on H1
+2025-03-29 00:49:14,337 - INFO - Removed existing CSV file: data\USDJPYm_H4_data.csv
+2025-03-29 00:49:14,337 - INFO - Removed existing CSV file: data\USDJPYm_H4_data.csv
+2025-03-29 00:49:14,363 - INFO - Fetched 3000 rows for USDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:49:14,363 - INFO - Fetched 3000 rows for USDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:49:14,383 - INFO - Created new CSV with 3000 rows for USDJPYm on H4
+2025-03-29 00:49:14,383 - INFO - Created new CSV with 3000 rows for USDJPYm on H4
+2025-03-29 00:49:14,383 - INFO - Removed existing CSV file: data\USDJPYm_D1_data.csv
+2025-03-29 00:49:14,383 - INFO - Removed existing CSV file: data\USDJPYm_D1_data.csv
+2025-03-29 00:49:14,410 - INFO - Fetched 2102 rows for USDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:49:14,410 - INFO - Fetched 2102 rows for USDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:49:14,423 - INFO - Created new CSV with 2102 rows for USDJPYm on D1
+2025-03-29 00:49:14,423 - INFO - Created new CSV with 2102 rows for USDJPYm on D1
+2025-03-29 00:49:14,565 - INFO - Fetched 3000 rows for AUDUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:14,565 - INFO - Fetched 3000 rows for AUDUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:14,586 - INFO - Created new CSV with 3000 rows for AUDUSDm on M1
+2025-03-29 00:49:14,586 - INFO - Created new CSV with 3000 rows for AUDUSDm on M1
+2025-03-29 00:49:14,613 - INFO - Fetched 3000 rows for AUDUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:14,613 - INFO - Fetched 3000 rows for AUDUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:14,630 - INFO - Created new CSV with 3000 rows for AUDUSDm on M5
+2025-03-29 00:49:14,630 - INFO - Created new CSV with 3000 rows for AUDUSDm on M5
+2025-03-29 00:49:14,659 - INFO - Fetched 3000 rows for AUDUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:14,659 - INFO - Fetched 3000 rows for AUDUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:14,680 - INFO - Created new CSV with 3000 rows for AUDUSDm on M15
+2025-03-29 00:49:14,680 - INFO - Created new CSV with 3000 rows for AUDUSDm on M15
+2025-03-29 00:49:16,441 - INFO - Fetched 3000 rows for AUDUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:16,441 - INFO - Fetched 3000 rows for AUDUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:16,463 - INFO - Created new CSV with 3000 rows for AUDUSDm on H1
+2025-03-29 00:49:16,463 - INFO - Created new CSV with 3000 rows for AUDUSDm on H1
+2025-03-29 00:49:24,675 - INFO - Fetched 3000 rows for AUDUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:24,675 - INFO - Fetched 3000 rows for AUDUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:24,693 - INFO - Created new CSV with 3000 rows for AUDUSDm on H4
+2025-03-29 00:49:24,693 - INFO - Created new CSV with 3000 rows for AUDUSDm on H4
+2025-03-29 00:49:32,995 - INFO - Fetched 2102 rows for AUDUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:32,995 - INFO - Fetched 2102 rows for AUDUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:33,006 - INFO - Created new CSV with 2102 rows for AUDUSDm on D1
+2025-03-29 00:49:33,006 - INFO - Created new CSV with 2102 rows for AUDUSDm on D1
+2025-03-29 00:49:33,182 - INFO - Fetched 3000 rows for NZDUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:33,182 - INFO - Fetched 3000 rows for NZDUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:49:33,199 - INFO - Created new CSV with 3000 rows for NZDUSDm on M1
+2025-03-29 00:49:33,199 - INFO - Created new CSV with 3000 rows for NZDUSDm on M1
+2025-03-29 00:49:33,227 - INFO - Fetched 3000 rows for NZDUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:33,227 - INFO - Fetched 3000 rows for NZDUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:49:33,263 - INFO - Created new CSV with 3000 rows for NZDUSDm on M5
+2025-03-29 00:49:33,263 - INFO - Created new CSV with 3000 rows for NZDUSDm on M5
+2025-03-29 00:49:33,289 - INFO - Fetched 3000 rows for NZDUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:33,289 - INFO - Fetched 3000 rows for NZDUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:49:33,306 - INFO - Created new CSV with 3000 rows for NZDUSDm on M15
+2025-03-29 00:49:33,306 - INFO - Created new CSV with 3000 rows for NZDUSDm on M15
+2025-03-29 00:49:34,108 - INFO - Fetched 3000 rows for NZDUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:34,108 - INFO - Fetched 3000 rows for NZDUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:49:34,125 - INFO - Created new CSV with 3000 rows for NZDUSDm on H1
+2025-03-29 00:49:34,125 - INFO - Created new CSV with 3000 rows for NZDUSDm on H1
+2025-03-29 00:49:40,546 - INFO - Fetched 3000 rows for NZDUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:40,546 - INFO - Fetched 3000 rows for NZDUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:49:40,564 - INFO - Created new CSV with 3000 rows for NZDUSDm on H4
+2025-03-29 00:49:40,564 - INFO - Created new CSV with 3000 rows for NZDUSDm on H4
+2025-03-29 00:49:48,477 - INFO - Fetched 2102 rows for NZDUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:48,477 - INFO - Fetched 2102 rows for NZDUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:49:48,489 - INFO - Created new CSV with 2102 rows for NZDUSDm on D1
+2025-03-29 00:49:48,489 - INFO - Created new CSV with 2102 rows for NZDUSDm on D1
+2025-03-29 00:49:48,649 - INFO - Fetched 3000 rows for USDCADm on M1 using copy_rates_from_pos
+2025-03-29 00:49:48,649 - INFO - Fetched 3000 rows for USDCADm on M1 using copy_rates_from_pos
+2025-03-29 00:49:48,668 - INFO - Created new CSV with 3000 rows for USDCADm on M1
+2025-03-29 00:49:48,668 - INFO - Created new CSV with 3000 rows for USDCADm on M1
+2025-03-29 00:49:48,694 - INFO - Fetched 3000 rows for USDCADm on M5 using copy_rates_from_pos
+2025-03-29 00:49:48,694 - INFO - Fetched 3000 rows for USDCADm on M5 using copy_rates_from_pos
+2025-03-29 00:49:48,716 - INFO - Created new CSV with 3000 rows for USDCADm on M5
+2025-03-29 00:49:48,716 - INFO - Created new CSV with 3000 rows for USDCADm on M5
+2025-03-29 00:49:48,740 - INFO - Fetched 3000 rows for USDCADm on M15 using copy_rates_from_pos
+2025-03-29 00:49:48,740 - INFO - Fetched 3000 rows for USDCADm on M15 using copy_rates_from_pos
+2025-03-29 00:49:48,761 - INFO - Created new CSV with 3000 rows for USDCADm on M15
+2025-03-29 00:49:48,761 - INFO - Created new CSV with 3000 rows for USDCADm on M15
+2025-03-29 00:49:49,509 - INFO - Fetched 3000 rows for USDCADm on H1 using copy_rates_from_pos
+2025-03-29 00:49:49,509 - INFO - Fetched 3000 rows for USDCADm on H1 using copy_rates_from_pos
+2025-03-29 00:49:49,535 - INFO - Created new CSV with 3000 rows for USDCADm on H1
+2025-03-29 00:49:49,535 - INFO - Created new CSV with 3000 rows for USDCADm on H1
+2025-03-29 00:49:54,889 - INFO - Fetched 3000 rows for USDCADm on H4 using copy_rates_from_pos
+2025-03-29 00:49:54,889 - INFO - Fetched 3000 rows for USDCADm on H4 using copy_rates_from_pos
+2025-03-29 00:49:54,909 - INFO - Created new CSV with 3000 rows for USDCADm on H4
+2025-03-29 00:49:54,909 - INFO - Created new CSV with 3000 rows for USDCADm on H4
+2025-03-29 00:50:04,080 - INFO - Fetched 2102 rows for USDCADm on D1 using copy_rates_from_pos
+2025-03-29 00:50:04,080 - INFO - Fetched 2102 rows for USDCADm on D1 using copy_rates_from_pos
+2025-03-29 00:50:04,093 - INFO - Created new CSV with 2102 rows for USDCADm on D1
+2025-03-29 00:50:04,093 - INFO - Created new CSV with 2102 rows for USDCADm on D1
+2025-03-29 00:50:04,255 - INFO - Fetched 3000 rows for USDCHFm on M1 using copy_rates_from_pos
+2025-03-29 00:50:04,255 - INFO - Fetched 3000 rows for USDCHFm on M1 using copy_rates_from_pos
+2025-03-29 00:50:04,274 - INFO - Created new CSV with 3000 rows for USDCHFm on M1
+2025-03-29 00:50:04,274 - INFO - Created new CSV with 3000 rows for USDCHFm on M1
+2025-03-29 00:50:04,302 - INFO - Fetched 3000 rows for USDCHFm on M5 using copy_rates_from_pos
+2025-03-29 00:50:04,302 - INFO - Fetched 3000 rows for USDCHFm on M5 using copy_rates_from_pos
+2025-03-29 00:50:04,319 - INFO - Created new CSV with 3000 rows for USDCHFm on M5
+2025-03-29 00:50:04,319 - INFO - Created new CSV with 3000 rows for USDCHFm on M5
+2025-03-29 00:50:04,349 - INFO - Fetched 3000 rows for USDCHFm on M15 using copy_rates_from_pos
+2025-03-29 00:50:04,349 - INFO - Fetched 3000 rows for USDCHFm on M15 using copy_rates_from_pos
+2025-03-29 00:50:04,366 - INFO - Created new CSV with 3000 rows for USDCHFm on M15
+2025-03-29 00:50:04,366 - INFO - Created new CSV with 3000 rows for USDCHFm on M15
+2025-03-29 00:50:05,140 - INFO - Fetched 3000 rows for USDCHFm on H1 using copy_rates_from_pos
+2025-03-29 00:50:05,140 - INFO - Fetched 3000 rows for USDCHFm on H1 using copy_rates_from_pos
+2025-03-29 00:50:05,159 - INFO - Created new CSV with 3000 rows for USDCHFm on H1
+2025-03-29 00:50:05,159 - INFO - Created new CSV with 3000 rows for USDCHFm on H1
+2025-03-29 00:50:11,779 - INFO - Fetched 3000 rows for USDCHFm on H4 using copy_rates_from_pos
+2025-03-29 00:50:11,779 - INFO - Fetched 3000 rows for USDCHFm on H4 using copy_rates_from_pos
+2025-03-29 00:50:11,798 - INFO - Created new CSV with 3000 rows for USDCHFm on H4
+2025-03-29 00:50:11,798 - INFO - Created new CSV with 3000 rows for USDCHFm on H4
+2025-03-29 00:50:20,931 - INFO - Fetched 2102 rows for USDCHFm on D1 using copy_rates_from_pos
+2025-03-29 00:50:20,931 - INFO - Fetched 2102 rows for USDCHFm on D1 using copy_rates_from_pos
+2025-03-29 00:50:20,945 - INFO - Created new CSV with 2102 rows for USDCHFm on D1
+2025-03-29 00:50:20,945 - INFO - Created new CSV with 2102 rows for USDCHFm on D1
+2025-03-29 00:50:21,009 - INFO - Fetched 3000 rows for EURJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:21,009 - INFO - Fetched 3000 rows for EURJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:21,027 - INFO - Created new CSV with 3000 rows for EURJPYm on M1
+2025-03-29 00:50:21,027 - INFO - Created new CSV with 3000 rows for EURJPYm on M1
+2025-03-29 00:50:21,039 - INFO - Fetched 3000 rows for EURJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:21,039 - INFO - Fetched 3000 rows for EURJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:21,057 - INFO - Created new CSV with 3000 rows for EURJPYm on M5
+2025-03-29 00:50:21,057 - INFO - Created new CSV with 3000 rows for EURJPYm on M5
+2025-03-29 00:50:21,071 - INFO - Fetched 3000 rows for EURJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:21,071 - INFO - Fetched 3000 rows for EURJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:21,091 - INFO - Created new CSV with 3000 rows for EURJPYm on M15
+2025-03-29 00:50:21,091 - INFO - Created new CSV with 3000 rows for EURJPYm on M15
+2025-03-29 00:50:24,345 - INFO - Fetched 3000 rows for EURJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:24,345 - INFO - Fetched 3000 rows for EURJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:24,366 - INFO - Created new CSV with 3000 rows for EURJPYm on H1
+2025-03-29 00:50:24,366 - INFO - Created new CSV with 3000 rows for EURJPYm on H1
+2025-03-29 00:50:31,996 - INFO - Fetched 3000 rows for EURJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:31,996 - INFO - Fetched 3000 rows for EURJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:32,015 - INFO - Created new CSV with 3000 rows for EURJPYm on H4
+2025-03-29 00:50:32,015 - INFO - Created new CSV with 3000 rows for EURJPYm on H4
+2025-03-29 00:50:40,078 - INFO - Fetched 2102 rows for EURJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:50:40,078 - INFO - Fetched 2102 rows for EURJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:50:40,091 - INFO - Created new CSV with 2102 rows for EURJPYm on D1
+2025-03-29 00:50:40,091 - INFO - Created new CSV with 2102 rows for EURJPYm on D1
+2025-03-29 00:50:40,187 - INFO - Fetched 3000 rows for GBPJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:40,187 - INFO - Fetched 3000 rows for GBPJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:40,205 - INFO - Created new CSV with 3000 rows for GBPJPYm on M1
+2025-03-29 00:50:40,205 - INFO - Created new CSV with 3000 rows for GBPJPYm on M1
+2025-03-29 00:50:40,219 - INFO - Fetched 3000 rows for GBPJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:40,219 - INFO - Fetched 3000 rows for GBPJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:40,240 - INFO - Created new CSV with 3000 rows for GBPJPYm on M5
+2025-03-29 00:50:40,240 - INFO - Created new CSV with 3000 rows for GBPJPYm on M5
+2025-03-29 00:50:40,265 - INFO - Fetched 3000 rows for GBPJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:40,265 - INFO - Fetched 3000 rows for GBPJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:40,286 - INFO - Created new CSV with 3000 rows for GBPJPYm on M15
+2025-03-29 00:50:40,286 - INFO - Created new CSV with 3000 rows for GBPJPYm on M15
+2025-03-29 00:50:42,212 - INFO - Fetched 3000 rows for GBPJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:42,212 - INFO - Fetched 3000 rows for GBPJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:42,230 - INFO - Created new CSV with 3000 rows for GBPJPYm on H1
+2025-03-29 00:50:42,230 - INFO - Created new CSV with 3000 rows for GBPJPYm on H1
+2025-03-29 00:50:47,769 - INFO - Fetched 3000 rows for GBPJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:47,769 - INFO - Fetched 3000 rows for GBPJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:47,787 - INFO - Created new CSV with 3000 rows for GBPJPYm on H4
+2025-03-29 00:50:47,787 - INFO - Created new CSV with 3000 rows for GBPJPYm on H4
+2025-03-29 00:50:55,795 - INFO - Fetched 2102 rows for GBPJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:50:55,795 - INFO - Fetched 2102 rows for GBPJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:50:55,809 - INFO - Created new CSV with 2102 rows for GBPJPYm on D1
+2025-03-29 00:50:55,809 - INFO - Created new CSV with 2102 rows for GBPJPYm on D1
+2025-03-29 00:50:56,089 - INFO - Fetched 3000 rows for AUDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:56,089 - INFO - Fetched 3000 rows for AUDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:50:56,108 - INFO - Created new CSV with 3000 rows for AUDJPYm on M1
+2025-03-29 00:50:56,108 - INFO - Created new CSV with 3000 rows for AUDJPYm on M1
+2025-03-29 00:50:56,445 - INFO - Fetched 3000 rows for AUDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:56,445 - INFO - Fetched 3000 rows for AUDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:50:56,463 - INFO - Created new CSV with 3000 rows for AUDJPYm on M5
+2025-03-29 00:50:56,463 - INFO - Created new CSV with 3000 rows for AUDJPYm on M5
+2025-03-29 00:50:56,613 - INFO - Fetched 3000 rows for AUDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:56,613 - INFO - Fetched 3000 rows for AUDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:50:56,632 - INFO - Created new CSV with 3000 rows for AUDJPYm on M15
+2025-03-29 00:50:56,632 - INFO - Created new CSV with 3000 rows for AUDJPYm on M15
+2025-03-29 00:50:56,707 - INFO - Fetched 3000 rows for AUDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:56,707 - INFO - Fetched 3000 rows for AUDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:50:56,725 - INFO - Created new CSV with 3000 rows for AUDJPYm on H1
+2025-03-29 00:50:56,725 - INFO - Created new CSV with 3000 rows for AUDJPYm on H1
+2025-03-29 00:50:56,787 - INFO - Fetched 3000 rows for AUDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:56,787 - INFO - Fetched 3000 rows for AUDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:50:56,805 - INFO - Created new CSV with 3000 rows for AUDJPYm on H4
+2025-03-29 00:50:56,805 - INFO - Created new CSV with 3000 rows for AUDJPYm on H4
+2025-03-29 00:51:02,995 - INFO - Fetched 2102 rows for AUDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:02,995 - INFO - Fetched 2102 rows for AUDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:03,008 - INFO - Created new CSV with 2102 rows for AUDJPYm on D1
+2025-03-29 00:51:03,008 - INFO - Created new CSV with 2102 rows for AUDJPYm on D1
+2025-03-29 00:51:03,073 - INFO - Fetched 3000 rows for NZDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:03,073 - INFO - Fetched 3000 rows for NZDJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:03,092 - INFO - Created new CSV with 3000 rows for NZDJPYm on M1
+2025-03-29 00:51:03,092 - INFO - Created new CSV with 3000 rows for NZDJPYm on M1
+2025-03-29 00:51:03,105 - INFO - Fetched 3000 rows for NZDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:03,105 - INFO - Fetched 3000 rows for NZDJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:03,121 - INFO - Created new CSV with 3000 rows for NZDJPYm on M5
+2025-03-29 00:51:03,121 - INFO - Created new CSV with 3000 rows for NZDJPYm on M5
+2025-03-29 00:51:03,136 - INFO - Fetched 3000 rows for NZDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:03,136 - INFO - Fetched 3000 rows for NZDJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:03,156 - INFO - Created new CSV with 3000 rows for NZDJPYm on M15
+2025-03-29 00:51:03,156 - INFO - Created new CSV with 3000 rows for NZDJPYm on M15
+2025-03-29 00:51:05,084 - INFO - Fetched 3000 rows for NZDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:05,084 - INFO - Fetched 3000 rows for NZDJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:05,106 - INFO - Created new CSV with 3000 rows for NZDJPYm on H1
+2025-03-29 00:51:05,106 - INFO - Created new CSV with 3000 rows for NZDJPYm on H1
+2025-03-29 00:51:10,508 - INFO - Fetched 3000 rows for NZDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:10,508 - INFO - Fetched 3000 rows for NZDJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:10,528 - INFO - Created new CSV with 3000 rows for NZDJPYm on H4
+2025-03-29 00:51:10,528 - INFO - Created new CSV with 3000 rows for NZDJPYm on H4
+2025-03-29 00:51:18,578 - INFO - Fetched 2102 rows for NZDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:18,578 - INFO - Fetched 2102 rows for NZDJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:18,592 - INFO - Created new CSV with 2102 rows for NZDJPYm on D1
+2025-03-29 00:51:18,592 - INFO - Created new CSV with 2102 rows for NZDJPYm on D1
+2025-03-29 00:51:18,671 - INFO - Fetched 3000 rows for CADJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:18,671 - INFO - Fetched 3000 rows for CADJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:18,691 - INFO - Created new CSV with 3000 rows for CADJPYm on M1
+2025-03-29 00:51:18,691 - INFO - Created new CSV with 3000 rows for CADJPYm on M1
+2025-03-29 00:51:18,702 - INFO - Fetched 3000 rows for CADJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:18,702 - INFO - Fetched 3000 rows for CADJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:18,730 - INFO - Created new CSV with 3000 rows for CADJPYm on M5
+2025-03-29 00:51:18,730 - INFO - Created new CSV with 3000 rows for CADJPYm on M5
+2025-03-29 00:51:18,749 - INFO - Fetched 3000 rows for CADJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:18,749 - INFO - Fetched 3000 rows for CADJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:18,775 - INFO - Created new CSV with 3000 rows for CADJPYm on M15
+2025-03-29 00:51:18,775 - INFO - Created new CSV with 3000 rows for CADJPYm on M15
+2025-03-29 00:51:20,694 - INFO - Fetched 3000 rows for CADJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:20,694 - INFO - Fetched 3000 rows for CADJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:20,715 - INFO - Created new CSV with 3000 rows for CADJPYm on H1
+2025-03-29 00:51:20,715 - INFO - Created new CSV with 3000 rows for CADJPYm on H1
+2025-03-29 00:51:26,116 - INFO - Fetched 3000 rows for CADJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:26,116 - INFO - Fetched 3000 rows for CADJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:26,135 - INFO - Created new CSV with 3000 rows for CADJPYm on H4
+2025-03-29 00:51:26,135 - INFO - Created new CSV with 3000 rows for CADJPYm on H4
+2025-03-29 00:51:34,046 - INFO - Fetched 2102 rows for CADJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:34,046 - INFO - Fetched 2102 rows for CADJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:34,059 - INFO - Created new CSV with 2102 rows for CADJPYm on D1
+2025-03-29 00:51:34,059 - INFO - Created new CSV with 2102 rows for CADJPYm on D1
+2025-03-29 00:51:34,141 - INFO - Fetched 3000 rows for CHFJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:34,141 - INFO - Fetched 3000 rows for CHFJPYm on M1 using copy_rates_from_pos
+2025-03-29 00:51:34,162 - INFO - Created new CSV with 3000 rows for CHFJPYm on M1
+2025-03-29 00:51:34,162 - INFO - Created new CSV with 3000 rows for CHFJPYm on M1
+2025-03-29 00:51:34,171 - INFO - Fetched 3000 rows for CHFJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:34,171 - INFO - Fetched 3000 rows for CHFJPYm on M5 using copy_rates_from_pos
+2025-03-29 00:51:34,192 - INFO - Created new CSV with 3000 rows for CHFJPYm on M5
+2025-03-29 00:51:34,192 - INFO - Created new CSV with 3000 rows for CHFJPYm on M5
+2025-03-29 00:51:34,202 - INFO - Fetched 3000 rows for CHFJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:34,202 - INFO - Fetched 3000 rows for CHFJPYm on M15 using copy_rates_from_pos
+2025-03-29 00:51:34,219 - INFO - Created new CSV with 3000 rows for CHFJPYm on M15
+2025-03-29 00:51:34,219 - INFO - Created new CSV with 3000 rows for CHFJPYm on M15
+2025-03-29 00:51:36,105 - INFO - Fetched 3000 rows for CHFJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:36,105 - INFO - Fetched 3000 rows for CHFJPYm on H1 using copy_rates_from_pos
+2025-03-29 00:51:36,126 - INFO - Created new CSV with 3000 rows for CHFJPYm on H1
+2025-03-29 00:51:36,126 - INFO - Created new CSV with 3000 rows for CHFJPYm on H1
+2025-03-29 00:51:41,535 - INFO - Fetched 3000 rows for CHFJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:41,535 - INFO - Fetched 3000 rows for CHFJPYm on H4 using copy_rates_from_pos
+2025-03-29 00:51:41,554 - INFO - Created new CSV with 3000 rows for CHFJPYm on H4
+2025-03-29 00:51:41,554 - INFO - Created new CSV with 3000 rows for CHFJPYm on H4
+2025-03-29 00:51:49,795 - INFO - Fetched 2102 rows for CHFJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:49,795 - INFO - Fetched 2102 rows for CHFJPYm on D1 using copy_rates_from_pos
+2025-03-29 00:51:49,806 - INFO - Created new CSV with 2102 rows for CHFJPYm on D1
+2025-03-29 00:51:49,806 - INFO - Created new CSV with 2102 rows for CHFJPYm on D1
+2025-03-29 00:51:49,873 - INFO - Fetched 3000 rows for EURGBPm on M1 using copy_rates_from_pos
+2025-03-29 00:51:49,873 - INFO - Fetched 3000 rows for EURGBPm on M1 using copy_rates_from_pos
+2025-03-29 00:51:49,892 - INFO - Created new CSV with 3000 rows for EURGBPm on M1
+2025-03-29 00:51:49,892 - INFO - Created new CSV with 3000 rows for EURGBPm on M1
+2025-03-29 00:51:49,904 - INFO - Fetched 3000 rows for EURGBPm on M5 using copy_rates_from_pos
+2025-03-29 00:51:49,904 - INFO - Fetched 3000 rows for EURGBPm on M5 using copy_rates_from_pos
+2025-03-29 00:51:49,921 - INFO - Created new CSV with 3000 rows for EURGBPm on M5
+2025-03-29 00:51:49,921 - INFO - Created new CSV with 3000 rows for EURGBPm on M5
+2025-03-29 00:51:49,934 - INFO - Fetched 3000 rows for EURGBPm on M15 using copy_rates_from_pos
+2025-03-29 00:51:49,934 - INFO - Fetched 3000 rows for EURGBPm on M15 using copy_rates_from_pos
+2025-03-29 00:51:49,954 - INFO - Created new CSV with 3000 rows for EURGBPm on M15
+2025-03-29 00:51:49,954 - INFO - Created new CSV with 3000 rows for EURGBPm on M15
+2025-03-29 00:51:51,851 - INFO - Fetched 3000 rows for EURGBPm on H1 using copy_rates_from_pos
+2025-03-29 00:51:51,851 - INFO - Fetched 3000 rows for EURGBPm on H1 using copy_rates_from_pos
+2025-03-29 00:51:51,870 - INFO - Created new CSV with 3000 rows for EURGBPm on H1
+2025-03-29 00:51:51,870 - INFO - Created new CSV with 3000 rows for EURGBPm on H1
+2025-03-29 00:51:57,205 - INFO - Fetched 3000 rows for EURGBPm on H4 using copy_rates_from_pos
+2025-03-29 00:51:57,205 - INFO - Fetched 3000 rows for EURGBPm on H4 using copy_rates_from_pos
+2025-03-29 00:51:57,225 - INFO - Created new CSV with 3000 rows for EURGBPm on H4
+2025-03-29 00:51:57,225 - INFO - Created new CSV with 3000 rows for EURGBPm on H4
+2025-03-29 00:52:05,170 - INFO - Fetched 2102 rows for EURGBPm on D1 using copy_rates_from_pos
+2025-03-29 00:52:05,170 - INFO - Fetched 2102 rows for EURGBPm on D1 using copy_rates_from_pos
+2025-03-29 00:52:05,183 - INFO - Created new CSV with 2102 rows for EURGBPm on D1
+2025-03-29 00:52:05,183 - INFO - Created new CSV with 2102 rows for EURGBPm on D1
+2025-03-29 00:52:05,248 - INFO - Fetched 3000 rows for EURAUDm on M1 using copy_rates_from_pos
+2025-03-29 00:52:05,248 - INFO - Fetched 3000 rows for EURAUDm on M1 using copy_rates_from_pos
+2025-03-29 00:52:05,270 - INFO - Created new CSV with 3000 rows for EURAUDm on M1
+2025-03-29 00:52:05,270 - INFO - Created new CSV with 3000 rows for EURAUDm on M1
+2025-03-29 00:52:05,278 - INFO - Fetched 3000 rows for EURAUDm on M5 using copy_rates_from_pos
+2025-03-29 00:52:05,278 - INFO - Fetched 3000 rows for EURAUDm on M5 using copy_rates_from_pos
+2025-03-29 00:52:05,300 - INFO - Created new CSV with 3000 rows for EURAUDm on M5
+2025-03-29 00:52:05,300 - INFO - Created new CSV with 3000 rows for EURAUDm on M5
+2025-03-29 00:52:05,309 - INFO - Fetched 3000 rows for EURAUDm on M15 using copy_rates_from_pos
+2025-03-29 00:52:05,309 - INFO - Fetched 3000 rows for EURAUDm on M15 using copy_rates_from_pos
+2025-03-29 00:52:05,336 - INFO - Created new CSV with 3000 rows for EURAUDm on M15
+2025-03-29 00:52:05,336 - INFO - Created new CSV with 3000 rows for EURAUDm on M15
+2025-03-29 00:52:07,312 - INFO - Fetched 3000 rows for EURAUDm on H1 using copy_rates_from_pos
+2025-03-29 00:52:07,312 - INFO - Fetched 3000 rows for EURAUDm on H1 using copy_rates_from_pos
+2025-03-29 00:52:07,337 - INFO - Created new CSV with 3000 rows for EURAUDm on H1
+2025-03-29 00:52:07,337 - INFO - Created new CSV with 3000 rows for EURAUDm on H1
+2025-03-29 00:52:12,962 - INFO - Fetched 3000 rows for EURAUDm on H4 using copy_rates_from_pos
+2025-03-29 00:52:12,962 - INFO - Fetched 3000 rows for EURAUDm on H4 using copy_rates_from_pos
+2025-03-29 00:52:12,982 - INFO - Created new CSV with 3000 rows for EURAUDm on H4
+2025-03-29 00:52:12,982 - INFO - Created new CSV with 3000 rows for EURAUDm on H4
+2025-03-29 00:52:21,207 - INFO - Fetched 2102 rows for EURAUDm on D1 using copy_rates_from_pos
+2025-03-29 00:52:21,207 - INFO - Fetched 2102 rows for EURAUDm on D1 using copy_rates_from_pos
+2025-03-29 00:52:21,222 - INFO - Created new CSV with 2102 rows for EURAUDm on D1
+2025-03-29 00:52:21,222 - INFO - Created new CSV with 2102 rows for EURAUDm on D1
+2025-03-29 00:52:21,253 - INFO - Fetched 3000 rows for USDZARm on M1 using copy_rates_from_pos
+2025-03-29 00:52:21,253 - INFO - Fetched 3000 rows for USDZARm on M1 using copy_rates_from_pos
+2025-03-29 00:52:21,271 - INFO - Created new CSV with 3000 rows for USDZARm on M1
+2025-03-29 00:52:21,271 - INFO - Created new CSV with 3000 rows for USDZARm on M1
+2025-03-29 00:52:21,299 - INFO - Fetched 3000 rows for USDZARm on M5 using copy_rates_from_pos
+2025-03-29 00:52:21,299 - INFO - Fetched 3000 rows for USDZARm on M5 using copy_rates_from_pos
+2025-03-29 00:52:21,318 - INFO - Created new CSV with 3000 rows for USDZARm on M5
+2025-03-29 00:52:21,318 - INFO - Created new CSV with 3000 rows for USDZARm on M5
+2025-03-29 00:52:21,345 - INFO - Fetched 3000 rows for USDZARm on M15 using copy_rates_from_pos
+2025-03-29 00:52:21,345 - INFO - Fetched 3000 rows for USDZARm on M15 using copy_rates_from_pos
+2025-03-29 00:52:21,365 - INFO - Created new CSV with 3000 rows for USDZARm on M15
+2025-03-29 00:52:21,365 - INFO - Created new CSV with 3000 rows for USDZARm on M15
+2025-03-29 00:52:21,392 - INFO - Fetched 3000 rows for USDZARm on H1 using copy_rates_from_pos
+2025-03-29 00:52:21,392 - INFO - Fetched 3000 rows for USDZARm on H1 using copy_rates_from_pos
+2025-03-29 00:52:21,413 - INFO - Created new CSV with 3000 rows for USDZARm on H1
+2025-03-29 00:52:21,413 - INFO - Created new CSV with 3000 rows for USDZARm on H1
+2025-03-29 00:52:22,213 - INFO - Fetched 3000 rows for USDZARm on H4 using copy_rates_from_pos
+2025-03-29 00:52:22,213 - INFO - Fetched 3000 rows for USDZARm on H4 using copy_rates_from_pos
+2025-03-29 00:52:22,238 - INFO - Created new CSV with 3000 rows for USDZARm on H4
+2025-03-29 00:52:22,238 - INFO - Created new CSV with 3000 rows for USDZARm on H4
+2025-03-29 00:52:22,240 - INFO - Fetched 2102 rows for USDZARm on D1 using copy_rates_from_pos
+2025-03-29 00:52:22,240 - INFO - Fetched 2102 rows for USDZARm on D1 using copy_rates_from_pos
+2025-03-29 00:52:22,256 - INFO - Created new CSV with 2102 rows for USDZARm on D1
+2025-03-29 00:52:22,256 - INFO - Created new CSV with 2102 rows for USDZARm on D1
+2025-03-29 00:52:22,258 - INFO - Removed existing CSV file: data\XAUUSDm_M1_data.csv
+2025-03-29 00:52:22,258 - INFO - Removed existing CSV file: data\XAUUSDm_M1_data.csv
+2025-03-29 00:52:22,259 - INFO - Fetched 3000 rows for XAUUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:52:22,259 - INFO - Fetched 3000 rows for XAUUSDm on M1 using copy_rates_from_pos
+2025-03-29 00:52:22,277 - INFO - Created new CSV with 3000 rows for XAUUSDm on M1
+2025-03-29 00:52:22,277 - INFO - Created new CSV with 3000 rows for XAUUSDm on M1
+2025-03-29 00:52:22,278 - INFO - Removed existing CSV file: data\XAUUSDm_M5_data.csv
+2025-03-29 00:52:22,278 - INFO - Removed existing CSV file: data\XAUUSDm_M5_data.csv
+2025-03-29 00:52:22,305 - INFO - Fetched 3000 rows for XAUUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:52:22,305 - INFO - Fetched 3000 rows for XAUUSDm on M5 using copy_rates_from_pos
+2025-03-29 00:52:22,325 - INFO - Created new CSV with 3000 rows for XAUUSDm on M5
+2025-03-29 00:52:22,325 - INFO - Created new CSV with 3000 rows for XAUUSDm on M5
+2025-03-29 00:52:22,325 - INFO - Removed existing CSV file: data\XAUUSDm_M15_data.csv
+2025-03-29 00:52:22,325 - INFO - Removed existing CSV file: data\XAUUSDm_M15_data.csv
+2025-03-29 00:52:22,555 - INFO - Fetched 3000 rows for XAUUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:52:22,555 - INFO - Fetched 3000 rows for XAUUSDm on M15 using copy_rates_from_pos
+2025-03-29 00:52:22,577 - INFO - Created new CSV with 3000 rows for XAUUSDm on M15
+2025-03-29 00:52:22,577 - INFO - Created new CSV with 3000 rows for XAUUSDm on M15
+2025-03-29 00:52:22,578 - INFO - Removed existing CSV file: data\XAUUSDm_H1_data.csv
+2025-03-29 00:52:22,578 - INFO - Removed existing CSV file: data\XAUUSDm_H1_data.csv
+2025-03-29 00:52:22,601 - INFO - Fetched 3000 rows for XAUUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:52:22,601 - INFO - Fetched 3000 rows for XAUUSDm on H1 using copy_rates_from_pos
+2025-03-29 00:52:22,622 - INFO - Created new CSV with 3000 rows for XAUUSDm on H1
+2025-03-29 00:52:22,622 - INFO - Created new CSV with 3000 rows for XAUUSDm on H1
+2025-03-29 00:52:22,622 - INFO - Removed existing CSV file: data\XAUUSDm_H4_data.csv
+2025-03-29 00:52:22,622 - INFO - Removed existing CSV file: data\XAUUSDm_H4_data.csv
+2025-03-29 00:52:22,648 - INFO - Fetched 3000 rows for XAUUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:52:22,648 - INFO - Fetched 3000 rows for XAUUSDm on H4 using copy_rates_from_pos
+2025-03-29 00:52:22,669 - INFO - Created new CSV with 3000 rows for XAUUSDm on H4
+2025-03-29 00:52:22,669 - INFO - Created new CSV with 3000 rows for XAUUSDm on H4
+2025-03-29 00:52:22,670 - INFO - Removed existing CSV file: data\XAUUSDm_D1_data.csv
+2025-03-29 00:52:22,670 - INFO - Removed existing CSV file: data\XAUUSDm_D1_data.csv
+2025-03-29 00:52:22,679 - INFO - Fetched 2096 rows for XAUUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:52:22,679 - INFO - Fetched 2096 rows for XAUUSDm on D1 using copy_rates_from_pos
+2025-03-29 00:52:22,698 - INFO - Created new CSV with 2096 rows for XAUUSDm on D1
+2025-03-29 00:52:22,698 - INFO - Created new CSV with 2096 rows for XAUUSDm on D1

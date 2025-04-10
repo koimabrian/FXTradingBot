@@ -1,0 +1,82 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+env/
+.virtualenv/
+*.venv/
+
+# Logs and temporary files
+*.log
+*.log.*
+backtest_log.txt
+trading_log.txt
+terminal_log.txt
+*.tmp
+*.bak
+*.swp
+
+# Data and generated files
+data/
+*.csv
+*.html
+*.html.opened
+metrics.csv
+metrics_plot.html
+metrics_plot.html.opened
+
+# Models and pickled files
+models/
+*.pkl
+
+# Environment and configuration files with sensitive data
+.env
+config.ini
+*.env.*
+*.key
+*.pem
+*.crt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+pip-wheel-metadata/
+
+# Testing and coverage
+.coverage
+coverage.xml
+*.cover
+*.cache
+nosetests.xml
+pytest_cache/
+
+# Documentation build files
+docs/_build/
+docs/build/
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*.out
+*.pid
+*.seed
+*.pid.lock
