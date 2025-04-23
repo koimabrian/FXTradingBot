@@ -31,11 +31,11 @@ def main():
 
     logger = setup_logging(args.debug)
 
-    # Define config with the 'parameters' section
     config = {
         'symbols': ['USDJPY', 'XAUUSD'],
         'timeframes': ['M1', 'M5', 'M15', 'H1', 'H4', 'D1'],
-        'strategies': ['purple_cloud'],
+        'strategies': ['combined'],  # Use combined strategy
+        'combined_strategies': ['sma', 'lrf', 'zigzag_fibonacci', 'garch_volatility'],  # Strategies to combine
         'backtest': {'timeframe': 'M1', 'cash': 100000, 'commission': 0.0002, 'margin': 0.1},
         'sl_strategies': ['fixed', 'atr', 'dynamic'],
         'tp_strategies': ['fixed', 'dynamic'],
@@ -45,7 +45,8 @@ def main():
         'dashboard': {'port': 8050},
         'mt5': {'mode': args.mode, 'demo': {'login': 208711745, 'password': 'Brian@2025', 'server': 'Exness-MT5Trial9'}},
         'parameters': {
-            'atr_period': 14  # Default ATR period for ATRSLTP
+            'atr_period': 14,
+            'profit_threshold': 5
         }
     }
 

@@ -19,6 +19,9 @@ from src.strategies.ichimoku_cloud import IchimokuCloudStrategy
 from src.strategies.volume_profile import VolumeProfileStrategy
 from src.strategies.pivot_points import PivotPointsStrategy
 from src.strategies.sma import SMAStrategy
+from src.strategies.lrf import LRFStrategy
+from src.strategies.zigzag_fibonacci import ZigZagFibonacciStrategy
+from src.strategies.garch_volatility import GARCHVolatilityStrategy
 from src.stop_take.dynamic_sltp import DynamicSLTPStrategy
 from src.stop_take.fixed_sltp import FixedSLTP
 from src.stop_take.atr_sltp import ATRSLTP
@@ -31,6 +34,7 @@ import warnings
 from tqdm import tqdm
 import itertools
 import os
+import numpy as np
 
 # Import dash and plotly for interactive dashboard
 from dash import Dash, dcc, html
@@ -39,6 +43,92 @@ import plotly.express as px
 
 # Suppress numpy and backtesting warnings
 warnings.filterwarnings('ignore', category=RuntimeWarning)
+
+class CombinedStrategy:
+    def __init__(self, strategies, sltp_strategy):
+        self.strategies = strategies
+        self.sltp_strategy = sltp_strategy
+        self.logger = logging.getLogger(__name__)
+
+    def init(self, data, symbol, volatility_dict=None, volatility_threshold=0.0001):
+        self.data = data
+        self.symbol = symbol
+        self.volatility_dict = volatility_dict if volatility_dict is not None else {}
+        self.volatility_threshold = volatility_threshold
+        self.open_positions = 0
+
+        # Initialize all strategies
+        for strategy in self.strategies:
+            strategy.data = data
+            strategy.symbol = symbol
+            if isinstance(strategy, ZigZagFibonacciStrategy):
+                strategy.volatility_rank = list(self.volatility_dict.keys()).index(symbol) if symbol in self.volatility_dict else len(self.volatility_dict)
+            if isinstance(strategy, GARCHVolatilityStrategy):
+                strategy.volatility_dict = self.volatility_dict
+                strategy.volatility_threshold = self.volatility_threshold
+            strategy.init()
+
+    def execute(self, current_price):
+        if self.open_positions >= 20:
+            self.logger.info(f"Max positions (20) reached. Skipping trade for {self.symbol}.")
+            return self.open_positions
+
+        # Collect signals from all strategies
+        buy_strength = 0
+        sell_strength = 0
+        filters_passed = True
+
+        for strategy in self.strategies:
+            # Simulate the strategy's next() to determine its signal
+            strategy.data.Close = np.append(strategy.data.Close, current_price)
+            strategy.data.High = np.append(strategy.data.High, current_price)
+            strategy.data.Low = np.append(strategy.data.Low, current_price)
+            strategy.data.Open = np.append(strategy.data.Open, current_price)
+            strategy.data.index = np.append(strategy.data.index, strategy.data.index[-1] + pd.Timedelta(minutes=1))
+
+            strategy.next()
+
+            # Check the strategy's position to determine its signal
+            if strategy.position.is_long:
+                buy_strength += 1
+            elif strategy.position.is_short:
+                sell_strength += 1
+
+            # Check filters (e.g., GARCHVolatilityStrategy)
+            if isinstance(strategy, GARCHVolatilityStrategy):
+                if strategy.volatility < strategy.volatility_threshold or strategy.var > 100000 * strategy.max_var_percent:
+                    filters_passed = False
+                expected_movement, spread = strategy.estimate_price_movement(strategy.volatility, current_price)
+                min_profit = strategy.min_profit_xauusd if strategy.symbol == "XAUUSDm" else strategy.min_profit_pips
+                if expected_movement < spread + min_profit:
+                    filters_passed = False
+
+            # Reset the strategy's position for the next iteration
+            strategy.position.close()
+
+        if not filters_passed:
+            self.logger.info(f"{self.symbol} - Filters not passed (volatility, VaR, or profitability).")
+            return self.open_positions
+
+        # Execute trade based on combined signal strength
+        if buy_strength > sell_strength:
+            self.logger.info(f"{self.symbol} - Combined BUY signal (Buy: {buy_strength}, Sell: {sell_strength})")
+            lot_size = 0.05 if self.symbol in ["USDZARm", "XAUUSDm"] else 0.1
+            # Simulate a buy order (in backtesting, this would be handled by the framework)
+            self.open_positions += 1
+        elif sell_strength > buy_strength:
+            self.logger.info(f"{self.symbol} - Combined SELL signal (Buy: {buy_strength}, Sell: {sell_strength})")
+            lot_size = 0.05 if self.symbol in ["USDZARm", "XAUUSDm"] else 0.1
+            # Simulate a sell order
+            self.open_positions += 1
+        else:
+            self.logger.info(f"{self.symbol} - No trade: Buy({buy_strength}), Sell({sell_strength})")
+
+        return self.open_positions
+
+    def check_close(self, position):
+        """Delegate position closure to the SL/TP strategy."""
+        return self.sltp_strategy.check_close(position)
 
 class BacktestRunner:
     def __init__(self, config, strategy_params):
@@ -60,7 +150,6 @@ class BacktestRunner:
         self.strategy_params = strategy_params
 
         # Initialize results, best_params, strategy_rankings, and sltp_rankings
-        # Use Manager only if parallel processing is enabled
         if self.parallel:
             self.manager = Manager()
             self.results = self.manager.dict()
@@ -146,7 +235,10 @@ class BacktestRunner:
             'ichimoku_cloud': IchimokuCloudStrategy,
             'volume_profile': VolumeProfileStrategy,
             'pivot_points': PivotPointsStrategy,
-            'sma': SMAStrategy
+            'sma': SMAStrategy,
+            'lrf': LRFStrategy,
+            'zigzag_fibonacci': ZigZagFibonacciStrategy,
+            'garch_volatility': GARCHVolatilityStrategy
         }
         strategy_class = strategy_map.get(strategy_name.lower())
         if not strategy_class:
@@ -161,6 +253,14 @@ class BacktestRunner:
         strategy_class._params = params
         return strategy_class
 
+    def get_sltp_instance(self, sl_strategy_name, tp_strategy_name):
+        sl_strategy = FixedSLTP(self.config) if sl_strategy_name == 'fixed' else \
+                      ATRSLTP(self.config) if sl_strategy_name == 'atr' else \
+                      DynamicSLTPStrategy(self.config) if sl_strategy_name == 'dynamic' else FixedSLTP(self.config)
+        tp_strategy = FixedSLTP(self.config) if tp_strategy_name == 'fixed' else \
+                      DynamicSLTPStrategy(self.config) if tp_strategy_name == 'dynamic' else FixedSLTP(self.config)
+        return sl_strategy, tp_strategy
+
     def run_backtest(self, symbol, timeframe, strategy_name, sl_strategy_name, tp_strategy_name, strategy_params=None, sl_params=None, tp_params=None):
         self._logger.info(f"Running backtest for {symbol} on {timeframe} with strategy {strategy_name}, SL strategy {sl_strategy_name}, TP strategy {tp_strategy_name}, strategy params {strategy_params}, SL params {sl_params}, TP params {tp_params}")
         data = self.load_data(symbol, timeframe)
@@ -170,32 +270,41 @@ class BacktestRunner:
 
         self._logger.debug(f"Loaded data for {symbol} on {timeframe}: {data.head()}")
 
-        dynamic_model = None
-        if sl_strategy_name == 'dynamic' or tp_strategy_name == 'dynamic':
-            dynamic_model = DynamicSLTPStrategy(self.config)
-            dynamic_model.train_model(data)
+        # Calculate volatility for all symbols to set volatility threshold
+        volatility_dict = {}
+        for sym in self.symbols:
+            sym_data = self.load_data(sym, timeframe)
+            if sym_data is None:
+                continue
+            garch_strategy = GARCHVolatilityStrategy(sym_data)
+            volatility, var, es = garch_strategy.get_garch_volatility_var_es(sym_data['Close'].values)
+            if volatility is not None:
+                volatility_dict[sym] = volatility
 
-        sl_strategy = FixedSLTP(self.config) if sl_strategy_name == 'fixed' else \
-                      ATRSLTP(self.config) if sl_strategy_name == 'atr' else \
-                      DynamicSLTPStrategy(self.config, dynamic_model) if sl_strategy_name == 'dynamic' else FixedSLTP(self.config)
-        tp_strategy = FixedSLTP(self.config) if tp_strategy_name == 'fixed' else \
-                      DynamicSLTPStrategy(self.config, dynamic_model) if tp_strategy_name == 'dynamic' else FixedSLTP(self.config)
+        # Calculate dynamic volatility threshold
+        ranked_symbols = sorted(volatility_dict.items(), key=lambda x: x[1], reverse=True)[:10]
+        volatilities = [vol for _, vol in ranked_symbols]
+        volatility_threshold = np.median(volatilities) * 0.75 if volatilities else 0.0001
 
-        if self.sl:
-            sl_strategy.custom_sl = lambda x, y, z: x - self.sl if z == 'buy' else x + self.sl
-        if self.tp:
-            tp_strategy.custom_tp = lambda x, y, z, w: x + self.tp if z == 'buy' else x - self.tp
+        # Handle combined strategy
+        if strategy_name.lower() == 'combined':
+            strategy_names = self.config.get('combined_strategies', ['sma', 'lrf', 'zigzag_fibonacci', 'garch_volatility'])
+            strategies = [self.get_strategy_instance(name) for name in strategy_names]
+            sl_strategy, tp_strategy = self.get_sltp_instance(sl_strategy_name, tp_strategy_name)
+            combined_strategy = CombinedStrategy(strategies, sl_strategy)
+            combined_strategy.init(data, symbol, volatility_dict, volatility_threshold)
+        else:
+            strategy_class = self.get_strategy_instance(strategy_name)
+            sl_strategy, tp_strategy = self.get_sltp_instance(sl_strategy_name, tp_strategy_name)
 
         if sl_params:
             sl_strategy.custom_sl = lambda x, y, z: x - sl_params['distance'] if z == 'buy' else x + sl_params['distance']
         if tp_params:
             tp_strategy.custom_tp = lambda x, y, z, w: x + tp_params['multiplier'] * (x - w) if z == 'buy' else x - tp_params['multiplier'] * (w - x)
 
-        strategy_class = self.get_strategy_instance(strategy_name)
-        self._logger.debug(f"Initializing Backtest for {strategy_name} with data shape: {data.shape}")
         bt = Backtest(
             data,
-            strategy_class,
+            strategy_class if strategy_name.lower() != 'combined' else CombinedStrategy,
             cash=100000,
             commission=self.commission,
             margin=0.1,
@@ -264,7 +373,6 @@ class BacktestRunner:
                                     'tp_params': tp_params
                                 }
 
-                            # Store the result
                             if self.parallel:
                                 if sym not in self.results:
                                     self.results[sym] = self.manager.dict()
@@ -316,13 +424,11 @@ class BacktestRunner:
     def create_dashboard(self):
         app = Dash(__name__)
 
-        # Convert Manager.list() to regular list and sort
         strategy_rankings = list(self.strategy_rankings)
         sltp_rankings = list(self.sltp_rankings)
         strategy_rankings = sorted(strategy_rankings, key=lambda x: x['return'], reverse=True)
         sltp_rankings = sorted(sltp_rankings, key=lambda x: x['return'], reverse=True)
 
-        # Convert results to a regular dictionary if it's a Manager.dict
         results = {}
         for symbol in self.results:
             results[symbol] = {}
@@ -331,7 +437,6 @@ class BacktestRunner:
                 for key, value in self.results[symbol][timeframe].items():
                     results[symbol][timeframe][key] = value
 
-        # Convert best_params to a regular dictionary if it's a Manager.dict
         best_params = dict(self.best_params)
 
         strategy_ranking_df = pd.DataFrame(strategy_rankings)
@@ -465,11 +570,10 @@ class BacktestRunner:
 
 if __name__ == "__main__":
     config = {
-        'symbols': ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "NZDUSD", "USDCAD", "USDCHF",
-           "EURJPY", "GBPJPY", "AUDJPY", "NZDJPY", "CADJPY", "CHFJPY",
-           "EURGBP", "EURAUD", "USDZAR", "XAUUSD"],
+        'symbols': ['USDJPY', 'XAUUSD'],
         'timeframes': ['M1', 'M5', 'M15', 'H1', 'H4', 'D1'],
-        'strategies': ['purple_cloud'],
+        'strategies': ['combined'],
+        'combined_strategies': ['sma', 'lrf', 'zigzag_fibonacci', 'garch_volatility'],
         'backtest': {'timeframe': 'M1', 'cash': 100000, 'commission': 0.0002, 'margin': 0.1},
         'sl_strategies': ['fixed', 'atr', 'dynamic'],
         'tp_strategies': ['fixed', 'dynamic'],
@@ -479,7 +583,8 @@ if __name__ == "__main__":
         'dashboard': {'port': 8050},
         'mt5': {'mode': 'demo', 'demo': {'login': 208711745, 'password': 'Brian@2025', 'server': 'Exness-MT5Trial9'}},
         'parameters': {
-            'atr_period': 14
+            'atr_period': 14,
+            'profit_threshold': 5
         }
     }
     runner = BacktestRunner(config, {})
